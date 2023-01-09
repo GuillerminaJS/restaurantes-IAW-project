@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "639b5d351341f7f2699aa7c3"
+  },
+  "name": "Luis Enrique",
+  "surnames": "Martín Lopez",
+  "role": "ADMIN",
+  "language": "CA"
+},{
+  "_id": {
+    "$oid": "639b5d351341f7f2699aa7c4"
+  },
+  "name": "Paquita Flores",
+  "surnames": "Serranita Alaves",
+  "role": "USER",
+  "language": "CA"
+},{
+  "_id": {
+    "$oid": "639b5d351341f7f2699aa7c5"
+  },
+  "name": "Pedro",
+  "surnames": "Horn Bucket",
+  "role": "USER",
+  "language": "CA"
+},{
+  "_id": {
+    "$oid": "639b5d351341f7f2699aa7c6"
+  },
+  "name": "Alex",
+  "surnames": "Cremento Tanez",
+  "role": "USER",
+  "language": "CA"
+},{
+  "_id": {
+    "$oid": "63b5a7957a95fddd0600feef"
+  },
+  "name": "Marcos",
+  "surnames": "Pepino",
+  "role": "ADMIN",
+  "language": "ES"
+},{
+  "_id": {
+    "$oid": "63b8a614efffabba0bbec024"
+  },
+  "name": "wd",
+  "surnames": "dsadw",
+  "role": "dasd",
+  "language": "fff"
+}]

@@ -1,0 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Geneva, Tahoma;
+}
+body{
+  position: relative;
+  background-color: #e5e5f7;
+  background-image:  repeating-linear-gradient(45deg, #5b966a55 25%, transparent 25%, transparent 75%, #5b966a55 75%, #5b966a55), repeating-linear-gradient(45deg, #5b966a55 25%, #e5e5f7 25%, #e5e5f7 75%, #5b966a55 75%, #5b966a55);
+  background-position: 0 0, 35px 35px;
+  background-size: 70px 70px;
+}
