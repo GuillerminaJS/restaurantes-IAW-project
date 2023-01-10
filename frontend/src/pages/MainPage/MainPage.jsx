@@ -1,11 +1,29 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import CarouselE from '../../components/CarouselE'
 import './mainPage.css'
 
+import RestaurantsGrid from '../../components/restaurants/RestaurantsGrid';
+import FilterRestaurant from '../../components/restaurants/FilterRestaurant';
+import {getRestaurants} from '../../services/RestaurantService.js'
+import RestaurantService from '../../services/RestaurantService.js';
 
 import CookieConsent from "react-cookie-consent";
 
 const MainPage = () => {
+
+  const [restaurants, setRestaurants] = useState([]);
+  const [query, setQuery] = useState('');
+
+  const handleSearch = () => {
+    return restaurants.filter(e=>
+      e.name.toUpperCase().includes(query.toUpperCase())
+      );
+  }
+
+  useEffect(
+    ()=>{
+      RestaurantService.getRestaurants().then(data => setRestaurants(data));
+    },[])
 
   return (
     
@@ -32,13 +50,7 @@ const MainPage = () => {
       <CarouselE/>
       <div className='mp-div1'>
         <div className='filter-container'>
-          <input type="text"/>
-          <input type="number" />
-          <select name="" id="">
-            <option value="1">1</option>
-            <option value="1">1</option>
-            <option value="1">1</option>
-          </select>
+          <FilterRestaurant setQuery={setQuery}/>
         </div>
         <div className='description-container'>
           <div className='div1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, qui! Deserunt deleniti aperiam esse tempora quidem similique architecto obcaecati sequi praesentium aspernatur ullam aliquid dolores quo, rem tempore soluta fugit.</div>
@@ -46,7 +58,7 @@ const MainPage = () => {
         </div>
       </div>
       <div className='mp-div2'>
-        <section>a</section> 
+        <section><RestaurantsGrid handleSearch={handleSearch}/></section> 
 
         <aside>
         

@@ -29,7 +29,7 @@ const restaurantsSchema = new Schema({
         type: mongoose.Schema.ObjectId,
         ref: 'Types'
     },
-    halfPrice :{
+    averagePrice :{
         type : Number,
         required: true
     }

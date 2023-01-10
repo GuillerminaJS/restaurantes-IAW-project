@@ -13,6 +13,7 @@ import Header from './components/common/Header/Header';
 import MainPage from './pages/MainPage/MainPage';
 import QuienesSomos from './pages/QuienesSomos/QuienesSomos';
 import Contacto from './pages/Contacto/Contacto';
+import RestaurantDetail from './pages/DetailPage/RestaurantDetail.jsx';
 // ...
 
 // Policy
@@ -32,7 +33,7 @@ import UserState from './context/UserState';
 
 function App() {
 
-  const [ token, setToken ] = useState();
+  const [token, setToken] = useState();
 
   if(!token) {
     return <Login setToken={setToken} />
@@ -48,6 +49,7 @@ function App() {
           <Header/>
             <Routes>
               <Route element={<MainPage/>} path='/'/>
+              <Route element={<RestaurantDetail/>} path='/restaurants/:idRestaurant'/>
               <Route element={<QuienesSomos/>} path="/quienes-somos" />
               <Route element={<PoliticaPrivacidad/>} path="/politica-privacidad" />
               <Route element={<PoliticaCookies/>} path="/politica-cookies" />

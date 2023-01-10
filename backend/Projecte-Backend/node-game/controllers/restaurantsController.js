@@ -24,6 +24,17 @@ export const searchRestaurantsByName = async (req, res) => {
     }
 };
 
+export const getRestaurantByAp = async (req, res) => {
+    try {
+        const {query} = req.params;
+        const documents = await Restaurants.find({ averagePrice: new RegExp(query, 'i')})
+
+        res.json(documents);
+    }catch (error) {
+        console.log(error);
+    }
+}
+
 export const searchRestaurantByType = async (req, res) => {
     try {
         const { query } = req.params;

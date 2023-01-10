@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const usersSchema = new Schema({
-    name: {
+    username: {
         type: String,
         required: true
     }, 
@@ -14,6 +14,13 @@ const usersSchema = new Schema({
         required: true
     },
     language:{
+        type: String
+    },
+    password:{
+        type: String,
+        required: true
+    },
+    token:{
         type: String
     }
 }, 

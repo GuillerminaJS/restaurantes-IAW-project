@@ -48,12 +48,12 @@ function Header() {
           <button>Change account</button>
         </div>
 
-        {/* <div>
+        <div>
         {
           userDataContext.role === ROLES.ADMIN &&
           <a href="#" className='admin-accessBtn'><FaWrench className='icon'/>Management</a>
         }
-        </div> */}
+        </div>
 
       </div>
 

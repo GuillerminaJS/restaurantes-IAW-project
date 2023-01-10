@@ -3,5 +3,6 @@
     "name": "Luís Enrique",
     "surnames":"Martín López",
     "role": "ADMIN",
-    "language": "CA"
+    "language": "CA",
+    "password": "1234"
 }
