@@ -1,0 +1,15 @@
+.restaurants-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, auto);
+    padding: 4rem;
+}
+
+.restaurants-grid img {
+    width: 30%;
+}
+
+.subart{
+    display: flex;
+    flex-direction: row;
+}

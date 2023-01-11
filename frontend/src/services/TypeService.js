@@ -1,4 +1,4 @@
-import { URL_API_TYPES, HEADERS } from '../constants/http_constants';
+import { URL_API_TYPES, HEADERS } from '../constants/app_constants.js';
 export default class TypeService {
 
     static getType() {

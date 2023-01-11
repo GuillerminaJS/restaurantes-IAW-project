@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import RestaurantService from '../../services/RestaurantService.js';
-
+import './restaurants.css';
 import RestaurantCard from './RestaurantCard'
 
 const RestaurantsGrid = ({ handleSearch }) => {

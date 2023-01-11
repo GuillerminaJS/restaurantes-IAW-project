@@ -51,7 +51,7 @@ function Header() {
         <div>
         {
           userDataContext.role === ROLES.ADMIN &&
-          <a href="#" className='admin-accessBtn'><FaWrench className='icon'/>Management</a>
+          <Link to="/select-crud" className='admin-accessBtn'><FaWrench className='icon'/>Management</Link>
         }
         </div>
 

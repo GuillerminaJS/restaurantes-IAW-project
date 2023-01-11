@@ -14,6 +14,11 @@ import MainPage from './pages/MainPage/MainPage';
 import QuienesSomos from './pages/QuienesSomos/QuienesSomos';
 import Contacto from './pages/Contacto/Contacto';
 import RestaurantDetail from './pages/DetailPage/RestaurantDetail.jsx';
+import SelectCrud from './pages/crud/SelectCrud';
+import ManageComments from './pages/crud/ManageComments';
+import ManageRestaurants from './pages/crud/ManageRestaurants';
+import ManageTypes from './pages/crud/ManageTypes';
+import ManageUsers from './pages/crud/ManageUsers';
 // ...
 
 // Policy
@@ -54,8 +59,13 @@ function App() {
               <Route element={<PoliticaPrivacidad/>} path="/politica-privacidad" />
               <Route element={<PoliticaCookies/>} path="/politica-cookies" />
               <Route element={<DPO/>} path="/dpo" />
+              <Route element={<SelectCrud/>} path="/select-crud"/>
               <Route element={<AvisoLegal/>} path="/aviso-legal" />
               <Route element={<Contacto/>} path="/contacto" />
+              <Route element={<ManageRestaurants/>} path="/restaurant-mg"/>
+              <Route element={<ManageTypes/>} path="/types-mg"/>
+              <Route element={<ManageComments/>} path="/comments-mg"/>
+              <Route element={<ManageUsers/>} path="/users-mg"/>
             </Routes>
             <Footer/>
         </BrowserRouter>

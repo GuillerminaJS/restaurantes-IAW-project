@@ -1,4 +1,4 @@
-import { URL_API_COMMENTS, HEADERS } from '../constants/http_constants.js';
+import { URL_API_COMMENTS, HEADERS } from '../constants/app_constants.js';
 
 export default class CommentService {
 
