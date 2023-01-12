@@ -7,3 +7,13 @@
 div input{
     font-size: 10;
 } */
+
+.formContainer{
+    font-size: 10px;
+    padding-left: 10px;
+    padding: 1px;
+}
+
+div input{
+    font-size: 10;
+}

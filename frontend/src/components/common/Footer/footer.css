@@ -62,8 +62,9 @@ footer a {
 }
 
 .footer-nav-list a:hover { 
-    border-bottom: 1px solid white;
+    color: #60956d;
 }
+
 .footer-nav-list li { 
     list-style: none; 
 }

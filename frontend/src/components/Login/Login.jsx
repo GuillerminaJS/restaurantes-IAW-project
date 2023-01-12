@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import PropTypes from 'prop-types';
+import {FaUserAlt, FaKey} from 'react-icons/fa'
+import './login.css'
 
 async function loginUser(credentials) {
     return fetch('http://localhost:8800/api/login', {
@@ -35,19 +37,26 @@ const Login = ({setToken}) => {
 
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <p>Username</p>
-        <input type="text" onChange={e => setUserName(e.target.value)}/>
+    <main className='login'>
+      <div className='frm'>
+        <h2>Porfavor haga login</h2>
+        <form onSubmit={handleSubmit}>
+          <div className='input-frm'>
+            <p><FaUserAlt className='useri'/>Username</p>
+            <input type="text" onChange={e => setUserName(e.target.value)}/>
+          </div>
+          <div className='input-frm'>
+            <p><FaKey className='passi'/>Password</p>
+            <input type="password" onChange={e => setPassword(e.target.value)}/>
+          </div>
+          <div className='input-btn'>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
       </div>
-      <div>
-        <p>Password</p>
-        <input type="password" onChange={e => setPassword(e.target.value)}/>
-      </div>
-      <div>
-        <button type="submit">Submit</button>
-      </div>
-    </form>
+      
+    </main>
+    
   )
 }
 

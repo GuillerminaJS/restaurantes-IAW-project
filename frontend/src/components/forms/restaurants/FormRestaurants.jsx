@@ -12,7 +12,7 @@ const FormRestaurants = () => {
 
     const [restaurants, setRestaurants] = useState([]);
     const [message, setMessage] = useState("");
-    const [types, setType] = useState([]);
+    const [types, setTypes] = useState([]);
 
     const inputName = useRef(null);
     const inputDescription = useRef(null);
@@ -52,7 +52,7 @@ const FormRestaurants = () => {
     },[message]);
 
     useEffect(()=>{
-        TypeService.getType().then(data=>setType(data));
+        TypeService.getType().then(data=>setTypes(data));
     },[]);
 
   return (

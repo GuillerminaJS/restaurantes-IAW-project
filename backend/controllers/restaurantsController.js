@@ -49,7 +49,7 @@ export const searchRestaurantByType = async (req, res) => {
 
 
 export const showRestaurantById = async (req, res) => {
-    const document = await Games.findById(req.params.idGame);
+    const document = await Restaurants.findById(req.params.idGame);
     if (!document) {
         res.json({ message: 'This restaurant doesn\'t exist' });
     }
@@ -71,7 +71,7 @@ export const updateRestaurant = async (req, res) => {
         const filter = { _id: req.body.id };
         const update = req.body;
         const options = { new: true };
-        const document = await Games.findOneAndUpdate(filter, update, options);
+        const document = await Restaurants.findOneAndUpdate(filter, update, options);
         res.json(document);
     } catch (error) {
         res.send(error);

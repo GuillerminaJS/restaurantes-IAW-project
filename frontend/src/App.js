@@ -54,6 +54,7 @@ function App() {
           <Header/>
             <Routes>
               <Route element={<MainPage/>} path='/'/>
+              <Route element={<Login/>} path='/login'/>
               <Route element={<RestaurantDetail/>} path='/restaurants/:idRestaurant'/>
               <Route element={<QuienesSomos/>} path="/quienes-somos" />
               <Route element={<PoliticaPrivacidad/>} path="/politica-privacidad" />

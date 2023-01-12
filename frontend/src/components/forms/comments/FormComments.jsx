@@ -4,6 +4,7 @@ import CommentService from '../../../services/CommentService';
 import UserService from '../../../services/UserService';
 import ListComments from './ListComments';
 import { FaEdit } from "react-icons/fa";
+import './comments.css'
 
 
 const FormComments = () => {

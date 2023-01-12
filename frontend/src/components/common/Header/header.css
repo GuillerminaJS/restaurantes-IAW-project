@@ -94,8 +94,9 @@ header .user-container{
     font-size: 13px;
 }
 
-.login-opt button{
+.login-opt .buttons{
     border: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
     border-radius: 5px;
     background-color: white;
     padding: 2px 2px 2px 2px;
@@ -103,7 +104,7 @@ header .user-container{
     color: #60a070;
 }
 
-.login-opt button:hover {
+.login-opt .buttons:hover {
     background-color: rgb(199, 199, 199);
     border: 1px solid rgb(199, 199, 199);
 }

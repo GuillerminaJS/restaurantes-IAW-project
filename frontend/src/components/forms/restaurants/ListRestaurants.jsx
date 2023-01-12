@@ -12,7 +12,7 @@ const ListRestaurants = ({_id, name, description, direction, phone, plates, type
     const[directionValue, setDirection] = useState(direction);
     const[phoneValue, setPhone] = useState(phone);
     const[platesValue, setPlates] = useState(plates);
-    const[typeValue, setType] = useState(type.name);
+    const[typeValue, setType] = useState(type._id);
     const[imgValue, setImg] = useState(img);
     const[averagePriceValue, setAveragePrice] = useState(averagePrice);
 
@@ -73,16 +73,20 @@ const ListRestaurants = ({_id, name, description, direction, phone, plates, type
            readOnly={!editRestaurant}
            />
         </td>
-        <td><select value={typeValue} onChange={e=>setType(e.target.value)}
-           className={editRestaurant ? 'edit' : 'readOnlyForm'}
-           readOnly={!editRestaurant}
-           >
-            {
-                types.map(e =>
-                    <option key={e._id} value={e._id}>{e.name}</option>
-                    )
+        <td>
+            {!editRestaurant ? type.name
+                :
+                <select defaultValue={typeValue} onChange={e=>setType(e.target.value)}
+                // className={editRestaurant ? 'edit' : 'readOnlyForm'} 
+                >
+                 {
+                     types.map(e =>
+                         <option key={e._id} value={e._id} >{e.name}</option>
+                         )
+                 }
+                </select>
             }
-           </select>
+            
         </td>
         <td><input type="text" value={imgValue} onChange={e=>setImg(e.target.value)}
            className={editRestaurant ? 'edit' : 'readOnlyForm'}

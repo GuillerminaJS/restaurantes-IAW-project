@@ -4,7 +4,6 @@ import './mainPage.css'
 
 import RestaurantsGrid from '../../components/restaurants/RestaurantsGrid';
 import FilterRestaurant from '../../components/restaurants/FilterRestaurant';
-import {getRestaurants} from '../../services/RestaurantService.js'
 import RestaurantService from '../../services/RestaurantService.js';
 
 import CookieConsent from "react-cookie-consent";
@@ -12,13 +11,17 @@ import CookieConsent from "react-cookie-consent";
 const MainPage = () => {
 
   const [restaurants, setRestaurants] = useState([]);
+  const [filterType, setFilterType] = useState('');
+  const [filterAp, setFilterAp] = useState('');
   const [query, setQuery] = useState('');
 
   const handleSearch = () => {
     return restaurants.filter(e=>
-      e.name.toUpperCase().includes(query.toUpperCase())
+      e.name.toUpperCase().includes(query.toUpperCase()) && e.type.name.includes(filterType) && JSON.stringify(e.averagePrice).includes(filterAp)
       );
+      
   }
+  
 
   useEffect(
     ()=>{
@@ -43,6 +46,7 @@ const MainPage = () => {
         expires={150}
         
       >
+    
         This website uses cookies to enhance the user experience.{" "}
         <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
       </CookieConsent>
@@ -50,7 +54,7 @@ const MainPage = () => {
       <CarouselE/>
       <div className='mp-div1'>
         <div className='filter-container'>
-          <FilterRestaurant setQuery={setQuery}/>
+          <FilterRestaurant setQuery={setQuery} setFilterType={setFilterType} setFilterAp={setFilterAp}/>
         </div>
         <div className='description-container'>
           <div className='div1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, qui! Deserunt deleniti aperiam esse tempora quidem similique architecto obcaecati sequi praesentium aspernatur ullam aliquid dolores quo, rem tempore soluta fugit.</div>

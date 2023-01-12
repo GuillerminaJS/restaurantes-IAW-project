@@ -22,6 +22,10 @@ function Header() {
 
   const userDataContext = useContext(UserContext);
 
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
   return (
     
     <header>
@@ -44,8 +48,8 @@ function Header() {
         </div>
         
         <div className='login-opt cont'>
-          <button>Log out</button>
-          <button>Change account</button>
+          <button onClick={refreshPage} className='buttons'>Log out</button>
+          <Link to="/login" className='buttons'>Change account</Link>
         </div>
 
         <div>
