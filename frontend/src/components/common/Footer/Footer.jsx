@@ -43,7 +43,8 @@ const Footer = () => {
           <li>
             <h2 className="nav-title">Patrocinadores</h2>
           </li>
-          <li><a href="#">-?-</a></li>
+       
+            <img src="/assets/img/patros.png"  className="patro"/>
 
         </ul>
 

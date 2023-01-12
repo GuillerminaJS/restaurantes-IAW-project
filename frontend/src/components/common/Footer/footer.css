@@ -61,10 +61,16 @@ footer a {
     flex-direction: column;
 }
 
+.footer-nav-list:last-child{
+    width: 20%;
+}
+
 .footer-nav-list a:hover { 
     color: #60956d;
 }
-
+.patro{
+    width: 60%;
+}
 .footer-nav-list li { 
     list-style: none; 
 }

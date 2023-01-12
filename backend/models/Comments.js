@@ -12,6 +12,10 @@ const commentsSchema = new Schema({
     user :{
         type: mongoose.Schema.ObjectId,
         ref: 'Users'
+    },
+    restaurant :{
+        type: mongoose.Schema.ObjectId,
+        ref: 'Restaurants'
     }
 }, 
 { versionKey: false }

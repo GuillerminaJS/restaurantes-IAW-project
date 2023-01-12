@@ -49,15 +49,13 @@ const FormComments = () => {
         <form id="frm-comment" name="frm-comment" onSubmit={e => handleSubmit(e)}>
             <h2>Comment data</h2>
                 <section className='firstRow'>
-                    <div className='inputBox'>
+                    
                         <label htmlFor="comment-cm">Comment</label>
                         <input type="text" maxLength='20' id="comment-cm" required placeholder='comment' ref={inputComment} />
-                    </div>
-                    <div className='inputBox'>
+                    
                         <label htmlFor="assesment-cm">Assesment</label>
                         <input type="text" maxLength='20' id="assesment-cm" required placeholder='assesment' ref={inputAssesment} />
-                    </div>
-                    <div className='input-box'>
+                    
                         <label>User ID:</label>
                          <select name="userComment" id="userComment" ref={inputUser}>
                              {
@@ -66,7 +64,8 @@ const FormComments = () => {
                                      )
                              }
                          </select>
-                    </div>
+                    
+                    
                 </section>
                 <section className='panelButton'>
                     <div className='input-box'>

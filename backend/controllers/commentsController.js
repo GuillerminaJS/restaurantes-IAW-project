@@ -2,7 +2,7 @@ import Comments from '../models/Comments.js';
 
 export const showAllComments= async (req, res) => {
     try {
-        const comments = await Comments.find({}).populate('user');
+        const comments = await Comments.find({}).populate('user').populate('restaurant');
         res.json(comments);
     } catch (error) {
         console.log(error);
@@ -27,7 +27,7 @@ export const newComment = async (req, res) => {
     const comment = new Comments(req.body);
     try {
         await comment.save();
-        res.json({ message : 'New comment was added' });
+        res.json({ message : 'New comment was added' + comment.user.name});
     } catch (error) {
         res.send(error);
     }

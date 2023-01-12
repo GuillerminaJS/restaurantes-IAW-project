@@ -26,7 +26,7 @@ const ListComments = ({_id, comment, assesment, user, handleDelete, setMessage, 
         }
 
         CommentService.update(comment).then(e=>{
-            setMessage("Updated comment:" + e._id);
+            setMessage("Updated comment:" + e.user._id);
             setEditComment(false);
         })
     }
@@ -37,7 +37,7 @@ const ListComments = ({_id, comment, assesment, user, handleDelete, setMessage, 
 
   return (
 
-    <div>
+    <tr>
         <td>{index}</td>
         <td>
             {!editComment ? user.username
@@ -72,7 +72,7 @@ const ListComments = ({_id, comment, assesment, user, handleDelete, setMessage, 
                 }
                 <FaTrashAlt onClick={() => handleDelete(_id)} color='red' /></td>
 
-    </div>
+    </tr>
   )
 }
 

@@ -4,6 +4,7 @@ import { FaEdit } from "react-icons/fa";
 import RowUser from './RowUser.jsx';
 import { useState } from 'react';
 import { useEffect } from 'react';
+// import './users.css '
 
 const FormUsers = () => {
     const [users, setUsers] = useState([]);
@@ -45,30 +46,28 @@ const FormUsers = () => {
         <form id='frm-user' name='frm-user' onSubmit={e => handleSubmit(e)}>
         <h2>User data</h2>
                 <section className='firstRow'>
-                    <div className='inputBox'>
+                    
                         <label htmlFor="username-user">Name</label>
                         <input type="text" maxLength='20' id="username-user" required placeholder='username' ref={inputUsername} />
-                    </div>
-                    <div className='inputBox'>
+                
                         <label htmlFor="surnames-user">Surnames</label>
                         <input type="" id="surnames-user" placeholder='surnames' ref={inputSurnames} />
-                    </div>
+                 
 
-                    <div className='inputBox'>
+                  
                         <label htmlFor="role-user">Role</label>
                         <input type="" id="role-user" placeholder='role' ref={inputRole} />
-                    </div>
+              
 
-                    <div className='inputBox'>
+                
                         <label htmlFor="language-user">Language</label>
                         <input type="" id="language-user" placeholder='language' ref={inputLanguage} />
-                    </div>
+                  
 
-                    <div className='inputBox'>
+                 
                         <label htmlFor="password-user">Password</label>
                         <input type="password" id="password-user" placeholder='password' ref={inputPassword} />
 
-                    </div>
                 </section>
                 <section className='panelButton'>
                     <button><FaEdit size='16' /> New user</button>

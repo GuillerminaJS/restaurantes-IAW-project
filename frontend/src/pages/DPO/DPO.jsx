@@ -1,4 +1,5 @@
 import React from 'react'
+import './dpo.css'
 
 const DPO = () => {
   return (

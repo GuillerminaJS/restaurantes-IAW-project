@@ -60,35 +60,29 @@ const FormRestaurants = () => {
     <form id="frm-restaurant" name="frm-restaurant" onSubmit={e => handleSubmit(e)}>
         <h2>Restaurant data</h2>
         <section className='firstRow'>
-            <div className='inputBox'>
+            
                 <label htmlFor='restaurant-name'>Name</label>
                 <input type="text" maxLength='20' id="restaurant-name" required placeholder='name' ref={inputName} />
-            </div>
-            <div className='inputBox'>
+            
                 <label htmlFor='restaurant-description'>Description</label>
                 <input type="text" maxLength='20' id="restaurant-description" required placeholder='description' ref={inputDescription} />
-            </div>
-            <div className='inputBox'>
+           
                 <label htmlFor='restaurant-img'>Image</label>
                 <input type="text" maxLength='20' id="restaurant-img" required placeholder='image' ref={inputImage} />
-            </div>
-            <div className='inputBox'>
+           
                 <label htmlFor='restaurant-dir'>Direction</label>
                 <input type="text" maxLength='20' id="restaurant-dir" required placeholder='direction' ref={inputDirection} />
-            </div>
-            <div className='inputBox'>
+            
                 <label htmlFor='restaurant-phone'>Phone</label>
                 <input type="text" maxLength='20' id="restaurant-phone" required placeholder='phone' ref={inputPhone} />
-            </div>
-            <div className='inputBox'>
+           
                 <label htmlFor='restaurant-plates'>Plates</label>
                 <input type="text" maxLength='20' id="restaurant-plates" required placeholder='plaets' ref={inputPlates} />
-            </div>
-            <div className='inputBox'>
+           
                 <label htmlFor='restaurant-averagePrice'>Average price</label>
                 <input type="text" maxLength='20' id="restaurant-averagePrice" required placeholder='plaets' ref={inputAveragePrice} />
-            </div>
-            <div className="inputBox">
+           
+           
                 <label>Types</label>
                 <select name="typeRestaurant" id="typeRestaurant" ref={inputType}>
                     {
@@ -97,7 +91,7 @@ const FormRestaurants = () => {
                         )
                     }
                 </select>
-            </div>
+          
             
         </section>
         <section className='panelButton'>

@@ -15,7 +15,6 @@ import Navigation from './Navigation'
 // Services
 import UserContext from '../../../context/UserContext'
 import {ROLES} from '../../../constants/app_constants.js'
-
 // ...
 
 function Header() {

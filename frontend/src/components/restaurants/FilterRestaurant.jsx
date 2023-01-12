@@ -2,6 +2,8 @@ import React,{useState, useEffect} from 'react'
 import TypeService from '../../services/TypeService';
 import RestaurantService from '../../services/RestaurantService';
 
+import {FaSistrix} from 'react-icons/fa'
+
 const FilterRestaurant = ({setQuery, setFilterType, setFilterAp}) => {
 
   const [types, setTypes] = useState([]);
@@ -19,11 +21,12 @@ useEffect(()=>{
   return (
     <div className='filter-div'>
 
-      <div>
-      <input type="text" name='filterName' placeholder='Search'
-        onChange={event=> { setQuery(event.target.value) }}/>
+      <div className='input-div'>
+      <input type="text" name='filterName' placeholder='Introduza nombre del restaurante'
+        onChange={event=> { setQuery(event.target.value) }}/> <button className='btn-search'><FaSistrix /></button>
       </div>
 
+      <label> Filtra precio medio
       <select name='filterAp' 
             onChange={event=>{ JSON.stringify(setFilterAp(event.target.value)) } }>
         
@@ -32,15 +35,20 @@ useEffect(()=>{
                 ap.map(e=> <option key={e._id} value={e.averagePrice}>{e.averagePrice}€</option>)
             }
         </select>
+      </label>
           
-      <select name='filterMaterial' 
-            onChange={event=>{ setFilterType(event.target.value) } }>
-        
-            <option value="">Tipos</option>
-            {
-                types.map(e=> <option key={e._id} value={e.name}>Comida {e.name}</option>)
-            }
-        </select>
+      <label>
+        Filtra tipo de restaurante
+        <select name='filterMaterial' 
+              onChange={event=>{ setFilterType(event.target.value) } }>
+          
+              <option value="">-</option>
+              {
+                  types.map(e=> <option key={e._id} value={e.name}>Comida {e.name}</option>)
+              }
+          </select>
+      </label>
+
     </div>
   )
 }

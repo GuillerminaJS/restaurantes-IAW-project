@@ -34,31 +34,30 @@ const MainPage = () => {
 
       <CookieConsent
         location="bottom"
-        buttonText="yay :)"
+        buttonText="Aceptar"
         enableDeclineButton
         onDecline={() => {
-          alert("nay!");
+          alert("Cookies no aplicadas");
         }}
-        declineButtonText="nay :("
+        declineButtonText="No aceptar"
         cookieName="myAwesomeCookieName2"
         style={{ background: "#2B373B" }}
         // buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
         expires={150}
         
       >
-    
-        This website uses cookies to enhance the user experience.{" "}
-        <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
+        Esta pagina web usa cookies para mejorar la experiencia del usuario{" "}
       </CookieConsent>
       
       <CarouselE/>
       <div className='mp-div1'>
+        
         <div className='filter-container'>
           <FilterRestaurant setQuery={setQuery} setFilterType={setFilterType} setFilterAp={setFilterAp}/>
         </div>
         <div className='description-container'>
-          <div className='div1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, qui! Deserunt deleniti aperiam esse tempora quidem similique architecto obcaecati sequi praesentium aspernatur ullam aliquid dolores quo, rem tempore soluta fugit.</div>
-          <div className='div1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorum vero autem non perferendis iusto dicta ipsa ipsum amet cumque accusamus, rem nemo quisquam facilis provident, harum, maiores commodi inventore?</div>
+          <div className='div1'>Uberante  es una plataforma online en la que se recogen millones de opiniones sobre restaurantes. </div>
+          <div className='div1'>En esta página se pueden encontrar todo tipo de opiniones y búsquedas de restaurantes, tanto como precio medio como por tipos de comida, también se puede buscar por nombre para ver que opinan nuestros usuarios sobre el restaurante. Tú también puedes colaborar y opinar sobre los restaurantes.</div>
         </div>
       </div>
       <div className='mp-div2'>
@@ -66,13 +65,42 @@ const MainPage = () => {
 
         <aside>
         
-          <h2>Noticias y novedades</h2>
+          <h2 className='tituloNoticias'>Noticias y novedades</h2>
 
-          <section>Noticia 1</section>
+          <section className='noticia'>
+            <h5>Pepita Burger Bar</h5>
+            <p>¡Solo HOY un 2x1 en todas las nuestras hamburguesas de la carta!</p>
+          </section>
 
-          <section>Noticia 2</section>
+          <section className='noticia'>
+            <h5>Koh</h5>
+            <p>Ven y prueba nuestro nuevo plato estrella, cangrejo rebozado con salsa teriyaki. Ven y atrévete a probarlo.</p>
+          </section>
 
-          <section>Noticia 3</section>
+          <section className='noticia'>
+            <h5>Wineing</h5>
+            <p>Oferta exclusiva de cata de vinos con tapas incluidas, solo hasta fin de existencias.</p>
+          </section>
+
+          <section className='noticia'>
+            <h5>Pepita Burger Bar</h5>
+            <p>¡Solo HOY un 2x1 en todas las nuestras hamburguesas de la carta!</p>
+          </section>
+
+          <section className='noticia'>
+            <h5>Koh</h5>
+            <p>Ven y prueba nuestro nuevo plato estrella, cangrejo rebozado con salsa teriyaki. Ven y atrévete a probarlo.</p>
+          </section>
+
+          <section className='noticia'>
+            <h5>Wineing</h5>
+            <p>Oferta exclusiva de cata de vinos con tapas incluidas, solo hasta fin de existencias.</p>
+          </section>
+
+          <section className='noticia'>
+            <h5>Koh</h5>
+            <p>Ven y prueba nuestro nuevo plato estrella, cangrejo rebozado con salsa teriyaki. Ven y atrévete a probarlo.</p>
+          </section>
 
         </aside>
       </div>

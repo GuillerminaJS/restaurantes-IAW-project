@@ -1,0 +1,85 @@
+.main-dtl{
+    align-items: center;
+}
+
+.detalleart{
+    display: flex;
+    flex-direction: row;
+    background-color: beige;
+}
+
+.info1{
+    display: flex;
+    flex-direction: row;
+}
+
+.info1 p{
+    margin-left: 10px;
+}
+
+.dot{
+    width: 10px;
+}
+
+.right h1{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.listcommentary{
+    display: flex;
+    flex-direction: column;
+}
+
+.seccionComentario {
+    background-color: beige;
+}
+
+.listC{
+    margin-left: 50%;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 100%;
+}
+
+.comentarioUsr {
+    width: 150px;
+}
+
+.comentarioUsr input {
+    width: 300px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.comentarioUsr input:hover{
+    border: none;
+}
+
+.Usr{
+    margin-right: 20px;
+    border-bottom: 1px solid green;
+}
+.displayUsr{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.publicar button{
+    background-color: #60a070 ;
+}
+
+.valoracion {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.valoracion input:hover{
+    border: none;
+}
+
+/* .left img {
+    width: 50%;
+} */

@@ -39,15 +39,17 @@ const FormType = () => {
     <div className='form-container'>
         <form id='frm-type' name='frm-type' onSubmit={e => handleSubmit(e)}>
         <h2>Type data</h2>
-            <div className='input-type'>
+            
                 <label htmlFor="name-type">Name: </label>
                 <input type="text" maxLength='20' id="name-cat" required placeholder='type name' ref={inputName} />
 
                 <label htmlFor="description-type">Description: </label>
                 <input type="" id="description-type" placeholder='description' ref={inputDescription} />
 
-                <button><FaEdit size='16' /> New category</button>
-            </div>
+                <section className='panelButton'>
+                    <button><FaEdit size='16' /> New user</button>
+                </section>
+           
         </form>
 
         {message && <div className='action-message'>{message}</div>}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import UserService from '../../../services/UserService.js';
 import { FaTrashAlt, FaEdit,FaSave } from "react-icons/fa";
+ import './users.css'
 
 const RowUser = ({ index, _id, username, surnames, role, language, handleDelete, setMessage}) => {
     const [editUser, setEditUser] = useState(false);
@@ -30,7 +31,7 @@ const RowUser = ({ index, _id, username, surnames, role, language, handleDelete,
     }
 
   return (
-    <div>
+    
         <tr>
             <td>{index}</td>
             <td><input type="text" value={usernameValue} onChange={e=>setName(e.target.value)}  
@@ -63,7 +64,7 @@ const RowUser = ({ index, _id, username, surnames, role, language, handleDelete,
                 }
                 <FaTrashAlt onClick={() => handleDelete(_id)} color='red' /></td>
         </tr>
-    </div>
+
   )
 }
 

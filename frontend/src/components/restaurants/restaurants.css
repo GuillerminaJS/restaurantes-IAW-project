@@ -3,13 +3,42 @@
     gap: 1rem;
     grid-template-columns: repeat(3, auto);
     padding: 4rem;
+    
 }
-
 .restaurants-grid img {
-    width: 30%;
+    width: 100%;
 }
 
 .subart{
     display: flex;
     flex-direction: row;
+}
+
+.card-grid {
+    background-color: beige;
+    border-radius: 5px;
+    height: 100%;
+    align-items: center;
+}
+
+.subinfo p{
+    margin-top: 10px;
+    margin-left: 10px;
+    border-bottom: 1px solid #759b7fb4;
+}
+
+.card-grid h2{
+    font-size: 22px;
+    margin-bottom: 0;
+    /* padding-left: 10px; */
+    text-align: center;
+    padding-top: 5px;
+    border-bottom: 1px solid black;
+    background-color: #759b7fb4;
+}
+
+.detail-btn{
+    margin-top: 10%;
+    margin-left: 15px;
+    color: #759b7fde;
 }
