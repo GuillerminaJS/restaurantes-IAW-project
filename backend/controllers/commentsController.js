@@ -27,7 +27,7 @@ export const newComment = async (req, res) => {
     const comment = new Comments(req.body);
     try {
         await comment.save();
-        res.json({ message : 'New comment was added' + comment.user.name});
+        res.json({ message : 'New comment was added' + comment._id});
     } catch (error) {
         res.send(error);
     }

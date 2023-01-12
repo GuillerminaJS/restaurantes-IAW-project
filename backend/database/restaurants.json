@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "639b5d6e1341f7f2699aa7cc"
+  },
+  "description": "Restaurante/vinoteca oscura con todo tipo de vinos ",
+  "direction": "Calle Apuntadors 24, 07012 Palma de Mallorca",
+  "name": "Wineing",
+  "phone": 971214011,
+  "plates": "Tabla de quesos, tabla de embutidos, tapas, grill",
+  "type": {
+    "$oid": "63ad70303d0e79f2d7e299e3"
+  },
+  "img": "restaurante2.jpg",
+  "averagePrice": 30
+},{
+  "_id": {
+    "$oid": "639b5d6e1341f7f2699aa7cd"
+  },
+  "description": "Comida española, ven a probar la comida tipica española",
+  "direction": "Plaça de Sant Antoni 8, 07002 Palma de Mallorca",
+  "name": "Cannibal Cantina Bistro",
+  "phone": 662542089,
+  "plates": "Ensalada de queso, bacalao con tumbet, zamburiñas",
+  "type": {
+    "$oid": "63ad70303d0e79f2d7e299e4"
+  },
+  "img": "restaurante3.jpg",
+  "averagePrice": 25
+},{
+  "_id": {
+    "$oid": "639b5d6e1341f7f2699aa7ce"
+  },
+  "description": "Comida thailandesa, receta original por antepasados de Thailandia",
+  "direction": "Calle Servet 15 Santa Catalina, 07013 Palma de Mallorca",
+  "name": "Koh",
+  "phone": 635339211,
+  "plates": "Noodles, pollo, curry, dumplings, thai scalops ",
+  "type": {
+    "$oid": "63ad70303d0e79f2d7e299e2"
+  },
+  "img": "restaurante4.jpg",
+  "averagePrice": {
+    "$numberDecimal": "15"
+  }
+},{
+  "_id": {
+    "$oid": "639b5d6e1341f7f2699aa7cf"
+  },
+  "description": "Hamburgueseria estilo americano",
+  "direction": "Carrer de Ramon y Cajal, 4, 07011 Palma de Mallorca",
+  "name": "Pepita Buger Bar",
+  "phone": 971059785,
+  "plates": "Lágrimas de pollo, pepita Riley, pepita summus",
+  "type": {
+    "$oid": "63ad70303d0e79f2d7e299e2"
+  },
+  "img": "restaurante5.jpg",
+  "averagePrice": {
+    "$numberDecimal": "30"
+  }
+},{
+  "_id": {
+    "$oid": "63bec484971524efe850e491"
+  },
+  "description": "Hamburgueseria estilo americano2",
+  "direction": "Carrer de Ramon y Cajal, 4, 07011 Palma de Mallorca",
+  "name": "Pepita Buger Bar2",
+  "phone": 971059785,
+  "plates": "Lágrimas de pollo, pepita Riley, pepita summus",
+  "type": {
+    "$oid": "63ad70303d0e79f2d7e299e2"
+  },
+  "img": "restaurante6.jpg",
+  "averagePrice": {
+    "$numberDecimal": "30"
+  }
+},{
+  "_id": {
+    "$oid": "63bf38c10a920d6faf538dbb"
+  },
+  "name": "Juicy Lucy Dinner & ",
+  "img": "restaurante1.jpg",
+  "description": "Bar/restaurante al e",
+  "direction": "Bar/restaurante al e",
+  "phone": 658182929,
+  "plates": "Nuggets de pollo, ha",
+  "type": {
+    "$oid": "63ad70303d0e79f2d7e299e3"
+  },
+  "averagePrice": 20
+}]

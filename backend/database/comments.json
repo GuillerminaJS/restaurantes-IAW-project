@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "63ad71303d0e79f2d7e299e8"
+  },
+  "comment": "Este restaurante está bueno.",
+  "assesment": "5",
+  "user": {
+    "$oid": "639b5d351341f7f2699aa7c6"
+  },
+  "restaurant": {
+    "$oid": "639b5d6e1341f7f2699aa7cc"
+  }
+},{
+  "_id": {
+    "$oid": "63c03a3d5577f2dfbf926059"
+  },
+  "comment": "muy buen restaurante",
+  "assesment": "4",
+  "user": {
+    "$oid": "639b5d351341f7f2699aa7c5"
+  }
+},{
+  "_id": {
+    "$oid": "63c079dd5577f2dfbf926434"
+  },
+  "comment": "todo tico",
+  "assesment": "5",
+  "user": {
+    "$oid": "639b5d351341f7f2699aa7c3"
+  }
+},{
+  "_id": {
+    "$oid": "63c07a4464e06907a7a0d655"
+  },
+  "comment": "las croquetas buenas",
+  "assesment": "3",
+  "user": {
+    "$oid": "63b5a7957a95fddd0600feef"
+  }
+}]

@@ -8,14 +8,34 @@
 .frm {
     background-color: white;
     padding: 3%;
+    height: 350px;
+
 }
 
 .input-frm {
     margin-top: 5px;
+    margin-bottom: 20px;
 
+}
+
+.input-frm input {
+    width: 95%;
 }
 
 .input-btn{
     margin-top: 10px;
     margin-left: 76%;
+}
+
+.line {
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.useri{
+    margin-right: 5px;
+}
+
+.passi{
+    margin-right: 5px;
 }

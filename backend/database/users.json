@@ -1,0 +1,46 @@
+[{
+  "_id": {
+    "$oid": "639b5d351341f7f2699aa7c3"
+  },
+  "surnames": "Martín Lopez",
+  "role": "ADMIN",
+  "language": "CA",
+  "password": "1234",
+  "username": "Luisete Enrique"
+},{
+  "_id": {
+    "$oid": "639b5d351341f7f2699aa7c4"
+  },
+  "surnames": "Serranita Alaves",
+  "role": "USER",
+  "language": "CA",
+  "password": "1234",
+  "username": "Paquita Flores"
+},{
+  "_id": {
+    "$oid": "639b5d351341f7f2699aa7c5"
+  },
+  "surnames": "Horn Bucket",
+  "role": "USER",
+  "language": "CA",
+  "password": "1234",
+  "username": "Pedro"
+},{
+  "_id": {
+    "$oid": "639b5d351341f7f2699aa7c6"
+  },
+  "surnames": "Cremento Tanez",
+  "role": "USER",
+  "language": "CA",
+  "password": "1234",
+  "username": "Alex"
+},{
+  "_id": {
+    "$oid": "63b5a7957a95fddd0600feef"
+  },
+  "surnames": "Pepino",
+  "role": "ADMIN",
+  "language": "ES",
+  "password": "1234",
+  "username": "Marcos"
+}]

@@ -40,6 +40,7 @@ const Login = ({setToken}) => {
     <main className='login'>
       <div className='frm'>
         <h2>Porfavor haga login</h2>
+        <div className='line'></div>
         <form onSubmit={handleSubmit}>
           <div className='input-frm'>
             <p><FaUserAlt className='useri'/>Username</p>
